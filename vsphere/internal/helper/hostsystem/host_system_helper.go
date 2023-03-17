@@ -202,3 +202,9 @@ func GetConnectionState(host *object.HostSystem) (types.HostSystemConnectionStat
 
 	return hostProps.Runtime.ConnectionState, nil
 }
+
+// GetHostAdvancedSettingType is used in validation for updates to Advanced Settings on the ESXi Host.
+func GetHostAdvancedSettingType(key string) {
+	// to be implemented. pass in object response before validation?
+	return "string"
+}
